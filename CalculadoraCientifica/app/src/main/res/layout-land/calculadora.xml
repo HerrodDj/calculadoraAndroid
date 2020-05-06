@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:rowCount="6">
+
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="719dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#5a72a5"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:text="/"
+        />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/C"
+        android:text="C"
+        />
+
+    <Button
+        android:id="@+id/AC"
+        android:text="AC" />
+
+    <Button
+        android:id="@+id/button7"
+        android:backgroundTint="#fff"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button8"
+        android:backgroundTint="#fff"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:backgroundTint="#fff"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/suma"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button4"
+        android:backgroundTint="#fff"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:backgroundTint="#fff"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button6"
+        android:backgroundTint="#fff"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/resta"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button1"
+        android:backgroundTint="#fff"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:backgroundTint="#fff"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:backgroundTint="#fff"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/raiz"
+        android:text="√" />
+
+    <Button
+        android:id="@+id/button0"
+        android:backgroundTint="#fff"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/decimal"
+        android:backgroundTint="#fff"
+        android:text="." />
+
+    <Button
+        android:id="@+id/parentecis"
+        android:backgroundTint="#fff"
+        android:text="()" />
+
+    <Button
+        android:id="@+id/porcentaje"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/SIN"
+        android:text="SIN" />
+
+    <Button
+        android:id="@+id/COS"
+        android:text="COS" />
+
+    <Button
+        android:id="@+id/TAN"
+        android:text="TAN" />
+
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_height="144dp"
+        android:layout_row="0"
+        android:layout_rowSpan="3"
+        android:layout_column="31"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/CSC"
+        android:text="CSC" />
+
+    <Button
+        android:id="@+id/SEC"
+        android:text="SEC" />
+
+    <Button
+        android:id="@+id/COT"
+        android:text="COT" />
+
+    <Button
+        android:id="@+id/off"
+        android:text="Off" />
+
+    <Button
+        android:id="@+id/factorial"
+        android:text="X!" />
+
+    <Button
+        android:id="@+id/potencia"
+        android:text="Xˆ" />
+</GridLayout>
