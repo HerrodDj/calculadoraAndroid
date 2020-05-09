@@ -105,7 +105,7 @@ public class Calculadora implements Serializable {
             case "*": return multiply(this.getValue1(), this.getValue2());
             case "/": return divicion(this.getValue1(), this.getValue2());
             case "raiz": return raiz(this.getValue1());
-            case "potencia": return potencia(this.getValue1(), this.getValue2());
+            case "^": return potencia(this.getValue1(), this.getValue2());
             case "SIN": return seno(this.getValue1());
             case "COS": return coseno(this.getValue1());
             case "TAN": return tangente(this.getValue1());

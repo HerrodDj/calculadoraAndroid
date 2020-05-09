@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button del;
     private Button c;
+    private Button off;
 
     private TextView source;
 
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         c = findViewById(R.id.C);
         del = findViewById(R.id.DEL);
+        off=findViewById(R.id.off);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
@@ -115,8 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         igual.setOnClickListener(this);
         c.setOnClickListener(this);
         del.setOnClickListener(this);
-
-
+        off.setOnClickListener(this);
     }
 
 
@@ -202,6 +203,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 calculadora.setOperacion("%");
                 source.setText("");
                 break;
+            case R.id.factorial:
+                calculadora.setValue1(Double.parseDouble(source.getText().toString()));
+                Toast.makeText(this, "Button ! clicked", Toast.LENGTH_SHORT).show();
+                calculadora.setOperacion("!");
+                source.setText(String.valueOf(calculadora.calcular()));
+                break;
+            case R.id.potencia:
+                calculadora.setValue1(Double.parseDouble(source.getText().toString()));
+                Toast.makeText(this, "Button ^ clicked", Toast.LENGTH_SHORT).show();
+                calculadora.setOperacion("^");
+                source.setText("");
+                break;
             case R.id.COS:
                 calculadora.setValue1(Double.parseDouble(source.getText().toString()));
                 Toast.makeText(this, "Button COS clicked", Toast.LENGTH_SHORT).show();
@@ -253,15 +266,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.C:
                 Toast.makeText(this, "Button C clicked", Toast.LENGTH_SHORT).show();
-                source.setText("0");
+                if (!source.getText().toString().equals("")){
+                    source.setText(source.getText().subSequence(0,source.getText().length()-1)+"");
+                }
                 break;
-
             case R.id.equal:
                 calculadora.setValue2(Double.parseDouble(source.getText().toString()));
                 Toast.makeText(this, "Button = clicked", Toast.LENGTH_SHORT).show();
                 source.setText(String.valueOf(calculadora.calcular()));
                 break;
-
+            case R.id.off:
+                finish();
+                break;
         }
 
     }
